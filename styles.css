@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 50px;
+  background: white;
+}
+
+#color {
+  display: inline-block;
+  color: dimgray;
+  padding: 5px;
+  border-bottom: 30px solid skyblue;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#colors {
+  margin: 200px 50px 100px 50px;
+  text-align: center;
+}
+
+.color {
+  cursor: pointer;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  border: 4px solid white;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.color:hover {
+  box-shadow: 0 0 0 8px dimgray;
+}
+
+#side {
+  float: right;
+}
+
+#github {
+  float: left;
+}
+
+#github a {
+  color: silver;
+  display: inline-block;
+  font-size: 25px;
+  margin: 12px 10px;
+  text-decoration: underline;
+}
+
+#github a:hover {
+  text-decoration: none;
+}
+
+#categories {
+  float: left;
+  font-family: Arial;
+  text-decoration: underline;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  color: dimgray;
+  cursor: pointer;
+  direction: rtl;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 12px 2px;
+}
+
+@media screen and (max-width: 700px) {
+  
+  #side {
+    float: none;
+    margin-top: 20px;
+  }
+  
+  #colors {
+    margin-top: 280px;
+  }
+  
+}
